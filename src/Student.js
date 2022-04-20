@@ -4,7 +4,7 @@ function Student(){
     return(
         <div>
             <h1>{name}</h1>
-          <Student name={"Emran"} email={"emran@test.com"} />
+          <Users name={"Emran"} email={"emran@test.com"} />
           <button onClick={()=>{setName('Shaikh')}}>Click me</button>
         </div>
     )
