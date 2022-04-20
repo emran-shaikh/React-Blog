@@ -9,6 +9,7 @@ function App() {
 
       return (
         <div className="App">
+          <h1>{name}</h1>
           <Student name={"Emran"} email={"emran@test.com"} />
           <button onClick={()=>{setName('Shaikh')}}>Click me</button>
           <Users />
