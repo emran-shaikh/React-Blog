@@ -1,25 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
+import Users from './Users';
+import Student from './Student';
+import React, { Component, useState } from 'react';
+import { render } from '@testing-library/react';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+  let [name, setName] = useState('Emran');
+
+  function Apple(){
+    alert('Hello');
+  }
+
+      return (
+        <div className="App">
+          <Student name={"Emran"} email={"emran@test.com"} />
+          <button onClick={()=>{setName('Shaikh')}}>Click Me</button>
+        </div>
+    );
+
 }
 
 export default App;
