@@ -1,4 +1,6 @@
 import "./App.css";
+import ColorChange from "./ColorChange";
+import DidMount from "./DidMount";
 // import Loggin from "./Login";
 import Member from "./Member";
 
@@ -11,6 +13,8 @@ function memberData(){
       {/* <Loggin /> */}
 
       <Member data={memberData} />
+      <ColorChange />
+      <DidMount />
     </div>
     
   );
