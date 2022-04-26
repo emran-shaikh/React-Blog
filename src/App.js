@@ -1,20 +1,12 @@
 import "./App.css";
-import ColorChange from "./ColorChange";
-import DidMount from "./DidMount";
-// import Loggin from "./Login";
-import Member from "./Member";
+import EffectCondition from "./EffectCondition";
+// import EffectsProps from "./EffectsProps";
 
 function App() {
-function memberData(){
-  alert('Ok I am from App');
-}
   return (
     <div className="App">
-      {/* <Loggin /> */}
-
-      <Member data={memberData} />
-      <ColorChange />
-      <DidMount />
+      <EffectCondition />
+      
     </div>
     
   );
